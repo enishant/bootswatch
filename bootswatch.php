@@ -9,12 +9,12 @@ if(json_decode($content) != null) {
 		}
 		if (file_exists($current_dir)) {
 			foreach($bootswatch->themes as $theme) {
-		    $target_dir = $current_dir . '/' . strtolower($theme->name);
-		    if (!file_exists($target_dir)) {
-		      mkdir($target_dir, 0755, true);
-		      exec("cd " . $target_dir . " && wget " . $theme->css);
-		      exec("cd " . $target_dir . " && wget " . $theme->cssMin);
-		    }
+				$target_dir = $current_dir . '/' . strtolower($theme->name);
+				if (!file_exists($target_dir)) {
+					mkdir($target_dir, 0755, true);
+					exec("cd " . $target_dir . " && wget " . $theme->css);
+					exec("cd " . $target_dir . " && wget " . $theme->cssMin);
+				}
 			}
 		}
 	}
