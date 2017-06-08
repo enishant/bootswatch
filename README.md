@@ -1,2 +1,2 @@
 # bootswatch
-Get All Bootswatch CSS within current directory to include design at current Bootstrap template
+Get All Bootswatch CSS within current directory to include css at current Bootstrap template
